@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.add = (num1, num2) => {
-    return num1 + num2;
-};
+var convertZwoFileToJson_1 = require("./services/convertZwoFileToJson");
+exports.convertZwoFileToJson = convertZwoFileToJson_1.convertZwoFileToJson;
 //# sourceMappingURL=index.js.map
