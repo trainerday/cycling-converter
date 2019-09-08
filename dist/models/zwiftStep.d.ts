@@ -1,5 +1,7 @@
 export declare class ZwiftStep {
-    name: string;
-    attrs: any;
-    constructor();
+    private _name;
+    private _attrs;
+    constructor(name: string, attrs: any);
+    Power: () => any;
+    Seconds: () => any;
 }

@@ -2,20 +2,21 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const workout_1 = require("../models/workout");
 const zwiftStep_1 = require("../models/zwiftStep");
-let Parser = require('node-xml-stream');
 let fs = require('fs');
+let Parser = require('node-xml-stream');
 const parserLight = require('xml2json-light');
 exports.convertZwoFileToJson = (filePath) => {
     return new Promise(function (resolve, reject) {
         let workout = new workout_1.Workout();
         getJson(filePath).then((res) => {
-            var xmlString = fs.readFileSync(filePath).toString('utf-8');
-            var wo = parserLight.xml2json(xmlString).workout_file;
+            const xmlString = fs.readFileSync(filePath).toString('utf-8');
+            const wo = parserLight.xml2json(xmlString).workout_file;
             workout.name = wo.name;
             workout.description = wo.description;
             workout.zwiftSteps = res;
+            //      console.log(res)
             res.forEach((row) => {
-                console.log(row);
+                //        console.log(row)
             });
             //  console.log(workout)
             resolve(workout);
@@ -23,14 +24,12 @@ exports.convertZwoFileToJson = (filePath) => {
     });
 };
 function getJson(filePath) {
-    var out = [];
+    const out = [];
     return new Promise(function (resolve, reject) {
         let parser = new Parser();
         parser.on('opentag', (name, attrs) => {
-            if (name === 'SteadyState' || name === 'IntervalsT') {
-                var zwiftStep = new zwiftStep_1.ZwiftStep();
-                zwiftStep.name = name;
-                zwiftStep.attrs = attrs;
+            if (name === 'SteadyState' || name === 'IntervalsT' || name === 'IntervalsT') {
+                const zwiftStep = new zwiftStep_1.ZwiftStep(name, attrs);
                 out.push(zwiftStep);
             }
         });
