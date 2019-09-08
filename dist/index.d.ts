@@ -1,1 +1,2 @@
-export { convertZwoFileToJson } from './services/convertZwoFileToJson';
+export * from as;
+export * from as;

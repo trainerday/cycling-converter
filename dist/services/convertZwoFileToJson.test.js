@@ -14,7 +14,7 @@ describe('convertZwoFileToJson', () => {
     test('base example first step', () => __awaiter(void 0, void 0, void 0, function* () {
         const res = yield convertZwoFileToJson_1.convertZwoFileToJson(__dirname + '/../test_data/intervalsT.zwo');
         expect(res.zwiftSteps.length).toBe(12);
-        expect(res.zwiftSteps[0].power).toBe(0.50449997);
+        expect(res.zwiftSteps[0].power).toBe(0.5);
         expect(res.zwiftSteps[0].seconds).toBe(180);
     }));
     test('base example 2nd step', () => __awaiter(void 0, void 0, void 0, function* () {

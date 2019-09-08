@@ -22,6 +22,7 @@ exports.convertZwoFileToJson = (filePath) => {
             workout.name = wo.name;
             workout.description = wo.description;
             workout.zwiftSteps = res;
+            workout.sport = wo.sportType;
             resolve(workout);
         });
     });

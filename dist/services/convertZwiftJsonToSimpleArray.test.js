@@ -13,6 +13,16 @@ const convertZwiftJsonToSimpleArray_1 = require("./convertZwiftJsonToSimpleArray
 const zwiftWorkout_1 = require("../models/zwiftWorkout");
 const zwiftStep_1 = require("../models/zwiftStep");
 describe('convertZwoFileToJson', () => {
+    test('basic properties', () => __awaiter(void 0, void 0, void 0, function* () {
+        const workout = new zwiftWorkout_1.ZwiftWorkout();
+        workout.name = 'big name';
+        workout.sport = 'bike';
+        workout.description = 'desc cool';
+        const res = yield convertZwiftJsonToSimpleArray_1.convertZwiftJsonToSimpleArray(workout);
+        expect(res.name).toBe('big name');
+        expect(res.sport).toBe('bike');
+        expect(res.description).toBe('desc cool');
+    }));
     test('Warmup', () => __awaiter(void 0, void 0, void 0, function* () {
         const workout = new zwiftWorkout_1.ZwiftWorkout();
         workout.zwiftSteps.push(new zwiftStep_1.ZwiftStep('Warmup', { Power: '50' }));
@@ -25,6 +35,12 @@ describe('convertZwoFileToJson', () => {
         const res = yield convertZwiftJsonToSimpleArray_1.convertZwiftJsonToSimpleArray(workout);
         expect(res.steps.length).toBe(1);
     }));
+    test('FreeRide', () => __awaiter(void 0, void 0, void 0, function* () {
+        const workout = new zwiftWorkout_1.ZwiftWorkout();
+        workout.zwiftSteps.push(new zwiftStep_1.ZwiftStep('FreeRide', { Duration: '600' }));
+        const res = yield convertZwiftJsonToSimpleArray_1.convertZwiftJsonToSimpleArray(workout);
+        expect(res.steps[0].powerLow).toBe(40);
+    }));
     test('IntervalT', () => __awaiter(void 0, void 0, void 0, function* () {
         const workout = new zwiftWorkout_1.ZwiftWorkout();
         const attrs = {
@@ -36,7 +52,7 @@ describe('convertZwoFileToJson', () => {
             Cadence: '110',
             CadenceResting: '80',
         };
-        workout.zwiftSteps.push(new zwiftStep_1.ZwiftStep('IntervalT', attrs));
+        workout.zwiftSteps.push(new zwiftStep_1.ZwiftStep('IntervalsT', attrs));
         const res = yield convertZwiftJsonToSimpleArray_1.convertZwiftJsonToSimpleArray(workout);
         expect(res.steps.length).toBe(8);
     }));

@@ -1,21 +1,22 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+/* eslint-disable @typescript-eslint/no-use-before-define */
 class ZwiftStep {
     constructor(name, attrs) {
         this._name = name;
         this._attrs = attrs;
     }
     get name() {
-        return this.name;
+        return this._name;
     }
     get power() {
-        return parseFloat(this._attrs.Power);
+        return round2(parseFloat(this._attrs.Power));
     }
     get powerLow() {
-        return parseFloat(this._attrs.PowerLow);
+        return round2(parseFloat(this._attrs.PowerLow));
     }
     get powerHigh() {
-        return parseFloat(this._attrs.PowerHigh);
+        return round2(parseFloat(this._attrs.PowerHigh));
     }
     get seconds() {
         return parseInt(this._attrs.Duration);
@@ -33,10 +34,10 @@ class ZwiftStep {
         return parseInt(this._attrs.OffDuration);
     }
     get onPower() {
-        return parseFloat(this._attrs.OnPower);
+        return round2(parseFloat(this._attrs.OnPower));
     }
     get offPower() {
-        return parseFloat(this._attrs.OffPower);
+        return round2(parseFloat(this._attrs.OffPower));
     }
     get cadence() {
         return parseInt(this._attrs.Cadence);
@@ -46,4 +47,7 @@ class ZwiftStep {
     }
 }
 exports.ZwiftStep = ZwiftStep;
+function round2(inp) {
+    return Math.round(inp * 100) / 100;
+}
 //# sourceMappingURL=zwiftStep.js.map

@@ -4,12 +4,25 @@ const workout_1 = require("../models/workout");
 const step_1 = require("../models/step");
 exports.convertZwiftJsonToSimpleArray = (workout) => {
     const wo = new workout_1.Workout(workout);
+    wo.name = workout.name;
+    wo.description = workout.description;
+    wo.sport = workout.sport;
     workout.zwiftSteps.forEach((zwiftStep) => {
         if (zwiftStep.name === 'Warmup') {
             const step = new step_1.Step();
             step.seconds = zwiftStep.duration;
             step.powerStart = zwiftStep.powerLow;
             step.powerEnd = zwiftStep.powerHigh;
+            wo.steps.push(step);
+        }
+        if (zwiftStep.name === 'FreeRide') {
+            const step = new step_1.Step();
+            step.seconds = zwiftStep.duration;
+            step.powerLow = 40;
+            step.powerHigh = 85;
+            if (zwiftStep.cadence) {
+                step.cadence = zwiftStep.cadence;
+            }
             wo.steps.push(step);
         }
         if (zwiftStep.name === 'SteadyState') {

@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3acc3754-b1c4-489d-8f3d-a6b3fd7fbc63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/zwiftStep.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/zwiftStep.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/zwiftStep.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/zwiftStep.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/zwiftStep.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/zwiftStep.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/services/convertZwiftJsonToSimpleArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services/convertZwiftJsonToSimpleArray.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/services/convertZwiftJsonToSimpleArray.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services/convertZwiftJsonToSimpleArray.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/services/convertZwiftJsonToSimpleArray.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services/convertZwiftJsonToSimpleArray.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/services/convertZwiftJsonToSimpleArray.test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services/convertZwiftJsonToSimpleArray.test.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/services/convertZwoFileToJson.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services/convertZwoFileToJson.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/services/convertZwoFileToJson.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services/convertZwoFileToJson.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/services/convertZwoFileToJson.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services/convertZwoFileToJson.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/services/convertZwoFileToJson.test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services/convertZwoFileToJson.test.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,68 +33,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.test.ts">
+        <entry file="file://$PROJECT_DIR$/src/index.test.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="649">
-              <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state relative-caret-position="319">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <element signature="e#0#79#0" expanded="true" />
+                <element signature="e#0#46#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/workout.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/convertZwoFileToJson.test.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/convertZwoFileToJson.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test_data/intervalsT.zwo">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -91,8 +63,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.prettierrc.js" />
-        <option value="$PROJECT_DIR$/src/index.test.ts" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/models/zwiftWorkout.ts" />
         <option value="$PROJECT_DIR$/src/models/workout.ts" />
         <option value="$PROJECT_DIR$/src/models/step.ts" />
@@ -101,12 +71,16 @@
         <option value="$PROJECT_DIR$/src/services/convertZwoFileToJson.ts" />
         <option value="$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.ts" />
         <option value="$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.test.ts" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/index.ts" />
+        <option value="$PROJECT_DIR$/src/index.test.ts" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1167" />
-    <option name="y" value="116" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="811" />
+    <option name="y" value="96" />
     <option name="width" value="2174" />
     <option name="height" value="1147" />
   </component>
@@ -201,15 +175,15 @@
       <updated>1567946831427</updated>
       <workItem from="1567946834127" duration="854000" />
       <workItem from="1567947797863" duration="3197000" />
-      <workItem from="1567951415115" duration="5885000" />
+      <workItem from="1567951415115" duration="6505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9936000" />
+    <option name="totallyTimeSpent" value="10556000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1167" y="116" width="2174" height="1147" extended-state="0" />
+    <frame x="811" y="96" width="2174" height="1147" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18903854" />
@@ -250,13 +224,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -278,46 +245,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/workout.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_data/intervalsT.zwo">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/zwiftWorkout.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="25" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/convertZwoFileToJson.test.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -332,22 +265,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/workout.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="58">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/convertZwoFileToJson.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="31" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/convertZwoFileToJson.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/convertZwiftJsonToSimpleArray.test.ts">
+    <entry file="file://$PROJECT_DIR$/src/test_data/intervalsT.zwo">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="232">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#0#79#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
