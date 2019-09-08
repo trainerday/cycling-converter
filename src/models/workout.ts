@@ -1,16 +1,15 @@
 import { Step } from './step'
-import { ZwiftStep } from './zwiftStep'
+import { ZwiftWorkout } from './zwiftWorkout'
+
 export class Workout {
   public name: string
   public description: string
   public sport: string
   public steps: Step[]
-  public zwiftSteps: ZwiftStep[]
-  constructor() {
-    this.name = ''
-    this.description = ''
+  public constructor(zwiftWorkout: ZwiftWorkout) {
+    this.name = zwiftWorkout.name
+    this.description = zwiftWorkout.description
     this.steps = []
-    this.sport = ''
-    this.zwiftSteps = []
+    this.sport = zwiftWorkout.sport
   }
 }

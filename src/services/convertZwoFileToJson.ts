@@ -1,12 +1,12 @@
-import { Workout } from '../models/workout'
+import { ZwiftWorkout } from '../models/zwiftWorkout'
 import { ZwiftStep } from '../models/zwiftStep'
-let fs = require('fs')
+import * as fs from 'fs'
 let Parser = require('node-xml-stream')
 const parserLight = require('xml2json-light')
 
-export const convertZwoFileToJson = (filePath: string): Promise<Workout> => {
+export const convertZwoFileToJson = (filePath: string): Promise<ZwiftWorkout> => {
   return new Promise(function(resolve, reject) {
-    let workout = new Workout()
+    let workout = new ZwiftWorkout()
 
     getJson(filePath).then((res: ZwiftStep[]) => {
       const xmlString = fs.readFileSync(filePath).toString('utf-8')
