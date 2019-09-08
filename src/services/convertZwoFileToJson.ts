@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires,null,@typescript-eslint/no-use-before-define */
 import { ZwiftWorkout } from '../models/zwiftWorkout'
 import { ZwiftStep } from '../models/zwiftStep'
 import * as fs from 'fs'
@@ -5,7 +6,7 @@ let Parser = require('node-xml-stream')
 const parserLight = require('xml2json-light')
 
 export const convertZwoFileToJson = (filePath: string): Promise<ZwiftWorkout> => {
-  return new Promise(function(resolve, reject) {
+  return new Promise(function(resolve) {
     let workout = new ZwiftWorkout()
 
     getJson(filePath).then((res: ZwiftStep[]) => {
@@ -14,11 +15,7 @@ export const convertZwoFileToJson = (filePath: string): Promise<ZwiftWorkout> =>
       workout.name = wo.name
       workout.description = wo.description
       workout.zwiftSteps = res
-      //      console.log(res)
-      res.forEach((row: ZwiftStep) => {
-        //        console.log(row)
-      })
-      //  console.log(workout)
+      workout.sport = wo.sportType
       resolve(workout)
     })
   })
@@ -29,7 +26,12 @@ function getJson(filePath: string) {
   return new Promise<ZwiftStep[]>(function(resolve, reject) {
     let parser = new Parser()
     parser.on('opentag', (name: string, attrs: any) => {
-      if (name === 'SteadyState' || name === 'IntervalsT' || name === 'IntervalsT') {
+      if (
+        name === 'SteadyState' ||
+        name === 'IntervalsT' ||
+        name === 'Warmup' ||
+        name === 'FreeRide'
+      ) {
         const zwiftStep = new ZwiftStep(name, attrs)
         out.push(zwiftStep)
       }

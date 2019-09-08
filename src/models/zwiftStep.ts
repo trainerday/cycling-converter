@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-use-before-define */
 export class ZwiftStep {
-  private _name: string
+  private readonly _name: string
   private _attrs: any
 
   public constructor(name: string, attrs: any) {
@@ -8,16 +9,28 @@ export class ZwiftStep {
   }
 
   public get name(): string {
-    return this.name
+    return this._name
   }
   public get power(): number {
-    return parseFloat(this._attrs.Power)
+    return round2(parseFloat(this._attrs.Power))
   }
+
+  public get powerLow(): number {
+    return round2(parseFloat(this._attrs.PowerLow))
+  }
+  public get powerHigh(): number {
+    return round2(parseFloat(this._attrs.PowerHigh))
+  }
+
   public get seconds(): number {
     return parseInt(this._attrs.Duration)
   }
   public get repeat(): number {
     return parseInt(this._attrs.Repeat)
+  }
+
+  public get duration(): number {
+    return parseInt(this._attrs.Duration)
   }
 
   public get onDuration(): number {
@@ -29,11 +42,11 @@ export class ZwiftStep {
   }
 
   public get onPower(): number {
-    return parseFloat(this._attrs.OnPower)
+    return round2(parseFloat(this._attrs.OnPower))
   }
 
   public get offPower(): number {
-    return parseFloat(this._attrs.OffPower)
+    return round2(parseFloat(this._attrs.OffPower))
   }
 
   public get cadence(): number {
@@ -43,4 +56,8 @@ export class ZwiftStep {
   public get cadenceResting(): number {
     return parseInt(this._attrs.CadenceResting)
   }
+}
+
+function round2(inp: number): number{
+  return Math.round(inp * 100) / 100
 }

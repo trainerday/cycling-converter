@@ -1,10 +1,9 @@
 import { Step } from './step';
-import { ZwiftStep } from './zwiftStep';
+import { ZwiftWorkout } from './zwiftWorkout';
 export declare class Workout {
     name: string;
     description: string;
     sport: string;
     steps: Step[];
-    zwiftSteps: ZwiftStep[];
-    constructor();
+    constructor(zwiftWorkout: ZwiftWorkout);
 }
