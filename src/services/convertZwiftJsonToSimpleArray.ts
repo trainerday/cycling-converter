@@ -18,6 +18,17 @@ export const convertZwiftJsonToSimpleArray = (workout: ZwiftWorkout): Workout =>
       wo.steps.push(step)
     }
 
+    if (zwiftStep.name === 'FreeRide') {
+      const step = new Step()
+      step.seconds = zwiftStep.duration
+      step.powerLow = 40
+      step.powerHigh = 85
+      if (zwiftStep.cadence) {
+        step.cadence = zwiftStep.cadence
+      }
+      wo.steps.push(step)
+    }
+
     if (zwiftStep.name === 'SteadyState') {
       const step = new Step()
       step.seconds = zwiftStep.duration

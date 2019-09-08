@@ -27,6 +27,13 @@ describe('convertZwoFileToJson', () => {
     const res = await convertZwiftJsonToSimpleArray(workout)
     expect(res.steps.length).toBe(1)
   })
+  test('FreeRide', async () => {
+    const workout = new ZwiftWorkout()
+    workout.zwiftSteps.push(new ZwiftStep('FreeRide', { Duration: '600' }))
+
+    const res = await convertZwiftJsonToSimpleArray(workout)
+    expect(res.steps[0].powerLow).toBe(40)
+  })
   test('IntervalT', async () => {
     const workout = new ZwiftWorkout()
     const attrs: any = {
