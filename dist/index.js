@@ -1,14 +1,7 @@
 "use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require());
-convertZwoFileToJson;
-from;
-'./services/convertZwoFileToJson';
-__export(require());
-convertZwiftJsonToSimpleArray;
-from;
-'./services/convertZwiftJsonToSimpleArray';
+var convertZwoFileToJson_1 = require("./services/ZwoFileToJson/convertZwoFileToJson");
+exports.convertZwoFileToJson = convertZwoFileToJson_1.convertZwoFileToJson;
+var convertZwiftJsonToSimpleArray_1 = require("./services/ZwfitToSimple/convertZwiftJsonToSimpleArray");
+exports.convertZwiftJsonToSimpleArray = convertZwiftJsonToSimpleArray_1.convertZwiftJsonToSimpleArray;
 //# sourceMappingURL=index.js.map

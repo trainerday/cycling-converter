@@ -1,7 +1,7 @@
-import { ZwiftWorkout } from '../models/zwiftWorkout'
-import { Workout } from '../models/workout'
-import { Step } from '../models/step'
-import { ZwiftStep } from '../models/zwiftStep'
+import { ZwiftWorkout } from '../../models/zwiftWorkout'
+import { Workout } from '../../models/workout'
+import { Step } from '../../models/step'
+import { ZwiftStep } from '../../models/zwiftStep'
 
 export const convertZwiftJsonToSimpleArray = (workout: ZwiftWorkout): Workout => {
   const wo = new Workout(workout)

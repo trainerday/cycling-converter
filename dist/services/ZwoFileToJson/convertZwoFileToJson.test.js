@@ -9,13 +9,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const index_1 = require("./index");
-const index_2 = require("./index");
+const convertZwoFileToJson_1 = require("./convertZwoFileToJson");
+const testPath = __dirname + '/../../test_data/intervalsT.zwo';
 describe('convertZwoFileToJson', () => {
     test('base example first step', () => __awaiter(void 0, void 0, void 0, function* () {
-        const res = yield index_1.convertZwoFileToJson(__dirname + '/test_data/intervalsT.zwo');
-        const final = index_2.convertZwiftJsonToSimpleArray(res);
-        expect(final.steps.length).toBe(46);
+        const res = yield convertZwoFileToJson_1.convertZwoFileToJson(testPath);
+        expect(res.zwiftSteps.length).toBe(12);
+        expect(res.zwiftSteps[0].power).toBe(0.5);
+        expect(res.zwiftSteps[0].seconds).toBe(180);
+    }));
+    test('base example 2nd step', () => __awaiter(void 0, void 0, void 0, function* () {
+        const res = yield convertZwoFileToJson_1.convertZwoFileToJson(testPath);
+        expect(res.zwiftSteps[1].repeat).toBe(4);
     }));
 });
-//# sourceMappingURL=index.test.js.map
+//# sourceMappingURL=convertZwoFileToJson.test.js.map

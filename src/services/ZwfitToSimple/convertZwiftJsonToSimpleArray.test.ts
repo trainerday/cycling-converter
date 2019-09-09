@@ -1,6 +1,6 @@
 import { convertZwiftJsonToSimpleArray } from './convertZwiftJsonToSimpleArray'
-import { ZwiftWorkout } from '../models/zwiftWorkout'
-import { ZwiftStep } from '../models/zwiftStep'
+import { ZwiftWorkout } from '../../models/zwiftWorkout'
+import { ZwiftStep } from '../../models/zwiftStep'
 
 describe('convertZwoFileToJson', () => {
   test('basic properties', async () => {

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires,null,@typescript-eslint/no-use-before-define */
-import { ZwiftWorkout } from '../models/zwiftWorkout'
-import { ZwiftStep } from '../models/zwiftStep'
+import { ZwiftWorkout } from '../../models/zwiftWorkout'
+import { ZwiftStep } from '../../models/zwiftStep'
 import * as fs from 'fs'
 let Parser = require('node-xml-stream')
 const parserLight = require('xml2json-light')

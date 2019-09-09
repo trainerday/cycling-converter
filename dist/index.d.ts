@@ -1,2 +1,2 @@
-export * from as;
-export * from as;
+export { convertZwoFileToJson } from './services/ZwoFileToJson/convertZwoFileToJson';
+export { convertZwiftJsonToSimpleArray } from './services/ZwfitToSimple/convertZwiftJsonToSimpleArray';

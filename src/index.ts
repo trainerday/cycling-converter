@@ -1,2 +1,2 @@
-export { convertZwoFileToJson } from './services/convertZwoFileToJson'
-export { convertZwiftJsonToSimpleArray } from './services/convertZwiftJsonToSimpleArray'
+export { convertZwoFileToJson } from './services/ZwoFileToJson/convertZwoFileToJson'
+export { convertZwiftJsonToSimpleArray } from './services/ZwfitToSimple/convertZwiftJsonToSimpleArray'
